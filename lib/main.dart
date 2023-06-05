@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quiz/start_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,27 +24,7 @@ class MyApp extends StatelessWidget {
               ]
             )
           ),
-          child: Center(
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Image.asset("assets/images/quiz-logo.png", width: 200.0,),
-                const SizedBox(height: 40.0),
-                const Text("Learn Flutter the fun way!", style: TextStyle(
-                  fontSize: 20.0,
-                  color: Colors.white
-                )),
-                const SizedBox(height: 40.0),
-                OutlinedButton(
-                    onPressed: (){},
-                    child: const Text("Start Quiz",
-                    style: TextStyle(
-                      color: Colors.white
-                    ),)
-                )
-              ],
-            ),
-          ),
+          child: const StartScreen()
         ),
       ),
     );
